@@ -1,0 +1,15 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+	{% if MDContent is not none %}
+		{% for md in MDContent %}
+			<p>Created {{ md[2] }}</p>
+			<p>{{ md[0] | safe}}</p>
+		{% endfor %}
+
+	{% else %}
+		<H2>Markdown files are missingfrom the md folder.</H2>
+	{% endif %}
+<a href="{{url_for('index')}}">Home</a>
+{% endblock%}
