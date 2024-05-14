@@ -11,5 +11,9 @@
 	{% else %}
 		<H2>Markdown files are missingfrom the md folder.</H2>
 	{% endif %}
-<a href="{{url_for('index')}}">Home</a>
+<a href="{{url_for('index')}}">
+	<svg>
+		<text x="5" y="30" fill="red" font-size="25" transform="rotate(30 20,40)">Home</text>
+	  </svg>
+</a>
 {% endblock%}

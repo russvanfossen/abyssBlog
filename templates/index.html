@@ -3,6 +3,6 @@
 
 {% block content %}
 {% for file in folder_contents %}
-<p><a href="/{{ file[0] }}">{{ file[1] }}</a></p>
+<p><a class="path" href="/{{ file[0] }}">{{ file[1] }}</a></p>
 {% endfor %}
 {% endblock %}

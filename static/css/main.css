@@ -1,0 +1,26 @@
+body{
+    background-color: #454450;
+    color: rgb(252, 222, 222);
+}
+
+a.path:link, a.path:visited {
+    background-color: #2a33b3;
+    color: white;
+    padding: 14px 25px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+  }
+  
+a.path:hover, a.path:active {
+    background-color: #0c17ad;
+  }
+
+.task-list-item {
+    list-style-type: none !important;
+  }
+  
+.task-list-item input[type="checkbox"] {
+    margin: 0 4px 0.25em -20px;
+    vertical-align: middle;
+  }
